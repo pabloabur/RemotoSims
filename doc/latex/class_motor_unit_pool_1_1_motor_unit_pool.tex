@@ -1,0 +1,227 @@
+\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool}{}\section{Motor\+Unit\+Pool.\+Motor\+Unit\+Pool Class Reference}
+\label{class_motor_unit_pool_1_1_motor_unit_pool}\index{Motor\+Unit\+Pool.\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool.\+Motor\+Unit\+Pool}}
+
+
+Class that implements a motor unit pool.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a79dc49385a2a1c707766fd355f612088}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a3b2ee8f3e5500bfdc8fa731a5cb7d622}{conf}, \hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a832364dc014aa8a1b2947abfe063f626}{pool})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+def \hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_ae211c664df7b661288fe71c4a6e63a18}{atualize\+Motor\+Unit\+Pool} (self, t)
+\begin{DoxyCompactList}\small\item\em Update all parts of the Motor Unit pool. \end{DoxyCompactList}\item 
+def \hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a11d81004e9bf591ac9dcce582e87b4f4}{list\+Spikes} (self)
+\begin{DoxyCompactList}\small\item\em List the spikes that occurred in the soma and in the terminal of the different motor units. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_aeb57d0463ad56a16b166d00dc6079b95}{kind}
+\begin{DoxyCompactList}\small\item\em Indicates that is Motor Unit pool. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a3b2ee8f3e5500bfdc8fa731a5cb7d622}{conf}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_configuration}{Configuration} object with the simulation parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a832364dc014aa8a1b2947abfe063f626}{pool}
+\begin{DoxyCompactList}\small\item\em String with Motor unit pool to which the motor unit belongs. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_aa5884530baaa20f46007805bc574407d}{M\+Unumber}
+\begin{DoxyCompactList}\small\item\em Number of motor units. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a1b14c831606c27efae62f1468850393b}{unit}
+\begin{DoxyCompactList}\small\item\em List of \hyperlink{namespace_motor_unit}{Motor\+Unit} objects. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a3790757a111061662ad0f98120b25e69}{pool\+Soma\+Spikes}
+\begin{DoxyCompactList}\small\item\em Vector with the instants of spikes in the soma compartment, in ms. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a4f0b93df27eb6303fa1a3d49653d4fd3}{pool\+Terminal\+Spikes}
+\begin{DoxyCompactList}\small\item\em Vector with the instants of spikes in the terminal, in ms. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a592dab3971b181b7cc7bb4b99b0bd09d}{Activation}
+\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a963061fdcfee8f9dc33e4d6f130ea59b}{hill\+Model}
+\begin{DoxyCompactList}\small\item\em String indicating whther a Hill model is used or not. \end{DoxyCompactList}\item 
+\hyperlink{class_motor_unit_pool_1_1_motor_unit_pool_a69b76b7748d3fd22f7367be8dd82d6cf}{Muscle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that implements a motor unit pool. 
+
+Encompasses a set of motor units that controls a single muscle. 
+
+Definition at line 26 of file Motor\+Unit\+Pool.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, conf, pool)}{__init__(self, conf, pool)}}]{\setlength{\rightskip}{0pt plus 5cm}def Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{conf, }
+\item[{}]{pool}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a79dc49385a2a1c707766fd355f612088}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a79dc49385a2a1c707766fd355f612088}
+
+
+Constructor. 
+
+
+\begin{DoxyItemize}
+\item Inputs\+:
+\begin{DoxyItemize}
+\item {\bfseries conf}\+: \hyperlink{namespace_configuration}{Configuration} object with the simulation parameters.
+\item {\bfseries pool}\+: string with Motor unit pool to which the motor unit belongs. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line 38 of file Motor\+Unit\+Pool.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!atualize\+Motor\+Unit\+Pool@{atualize\+Motor\+Unit\+Pool}}
+\index{atualize\+Motor\+Unit\+Pool@{atualize\+Motor\+Unit\+Pool}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{atualize\+Motor\+Unit\+Pool(self, t)}{atualizeMotorUnitPool(self, t)}}]{\setlength{\rightskip}{0pt plus 5cm}def Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+atualize\+Motor\+Unit\+Pool (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_ae211c664df7b661288fe71c4a6e63a18}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_ae211c664df7b661288fe71c4a6e63a18}
+
+
+Update all parts of the Motor Unit pool. 
+
+It consists to update all motor units, the activation signal and the muscle force.
+
+
+\begin{DoxyItemize}
+\item Inputs\+:
+\begin{DoxyItemize}
+\item {\bfseries t}\+: current instant, in ms. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line 93 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!list\+Spikes@{list\+Spikes}}
+\index{list\+Spikes@{list\+Spikes}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{list\+Spikes(self)}{listSpikes(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+list\+Spikes (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a11d81004e9bf591ac9dcce582e87b4f4}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a11d81004e9bf591ac9dcce582e87b4f4}
+
+
+List the spikes that occurred in the soma and in the terminal of the different motor units. 
+
+
+
+Definition at line 104 of file Motor\+Unit\+Pool.\+py.
+
+
+
+\subsection{Member Data Documentation}
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!Activation@{Activation}}
+\index{Activation@{Activation}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{Activation}{Activation}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+Activation}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a592dab3971b181b7cc7bb4b99b0bd09d}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a592dab3971b181b7cc7bb4b99b0bd09d}
+
+
+Definition at line 71 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!conf@{conf}}
+\index{conf@{conf}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{conf}{conf}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+conf}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a3b2ee8f3e5500bfdc8fa731a5cb7d622}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a3b2ee8f3e5500bfdc8fa731a5cb7d622}
+
+
+\hyperlink{namespace_configuration}{Configuration} object with the simulation parameters. 
+
+
+
+Definition at line 44 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!hill\+Model@{hill\+Model}}
+\index{hill\+Model@{hill\+Model}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{hill\+Model}{hillModel}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+hill\+Model}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a963061fdcfee8f9dc33e4d6f130ea59b}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a963061fdcfee8f9dc33e4d6f130ea59b}
+
+
+String indicating whther a Hill model is used or not. 
+
+For now, it can be {\itshape No}. 
+
+Definition at line 75 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!kind@{kind}}
+\index{kind@{kind}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{kind}{kind}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+kind}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_aeb57d0463ad56a16b166d00dc6079b95}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_aeb57d0463ad56a16b166d00dc6079b95}
+
+
+Indicates that is Motor Unit pool. 
+
+
+
+Definition at line 41 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!M\+Unumber@{M\+Unumber}}
+\index{M\+Unumber@{M\+Unumber}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{M\+Unumber}{MUnumber}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+M\+Unumber}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_aa5884530baaa20f46007805bc574407d}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_aa5884530baaa20f46007805bc574407d}
+
+
+Number of motor units. 
+
+
+
+Definition at line 51 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!Muscle@{Muscle}}
+\index{Muscle@{Muscle}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{Muscle}{Muscle}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+Muscle}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a69b76b7748d3fd22f7367be8dd82d6cf}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a69b76b7748d3fd22f7367be8dd82d6cf}
+
+
+Definition at line 77 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!pool@{pool}}
+\index{pool@{pool}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{pool}{pool}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+pool}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a832364dc014aa8a1b2947abfe063f626}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a832364dc014aa8a1b2947abfe063f626}
+
+
+String with Motor unit pool to which the motor unit belongs. 
+
+
+
+Definition at line 46 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!pool\+Soma\+Spikes@{pool\+Soma\+Spikes}}
+\index{pool\+Soma\+Spikes@{pool\+Soma\+Spikes}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{pool\+Soma\+Spikes}{poolSomaSpikes}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+pool\+Soma\+Spikes}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a3790757a111061662ad0f98120b25e69}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a3790757a111061662ad0f98120b25e69}
+
+
+Vector with the instants of spikes in the soma compartment, in ms. 
+
+
+
+Definition at line 66 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!pool\+Terminal\+Spikes@{pool\+Terminal\+Spikes}}
+\index{pool\+Terminal\+Spikes@{pool\+Terminal\+Spikes}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{pool\+Terminal\+Spikes}{poolTerminalSpikes}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+pool\+Terminal\+Spikes}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a4f0b93df27eb6303fa1a3d49653d4fd3}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a4f0b93df27eb6303fa1a3d49653d4fd3}
+
+
+Vector with the instants of spikes in the terminal, in ms. 
+
+
+
+Definition at line 68 of file Motor\+Unit\+Pool.\+py.
+
+\index{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}!unit@{unit}}
+\index{unit@{unit}!Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool@{Motor\+Unit\+Pool\+::\+Motor\+Unit\+Pool}}
+\subsubsection[{\texorpdfstring{unit}{unit}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+Unit\+Pool.\+Motor\+Unit\+Pool.\+unit}\hypertarget{class_motor_unit_pool_1_1_motor_unit_pool_a1b14c831606c27efae62f1468850393b}{}\label{class_motor_unit_pool_1_1_motor_unit_pool_a1b14c831606c27efae62f1468850393b}
+
+
+List of \hyperlink{namespace_motor_unit}{Motor\+Unit} objects. 
+
+
+
+Definition at line 54 of file Motor\+Unit\+Pool.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_motor_unit_pool_8py}{Motor\+Unit\+Pool.\+py}\end{DoxyCompactItemize}
