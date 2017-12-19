@@ -8,7 +8,7 @@ Number_Ia-LG,160,
 Number_Ia-TA,280,
 NumberAxonNodes,0,
 timeStep,0.05,
-simDuration,9000,
+simDuration,1000,
 nerveLength_PTN,0.8,
 nerveLength_CPN,0.8,
 MNSomaRefPer,5.0,
@@ -187,7 +187,8 @@ gmax_H:SOL-S@internode,9,
 gmax_Kf:SOL-S@internode,630,
 gmax_KsAxon:SOL-S@internode,2,
 %%% RC
-gmax_Na:RC_ext-@soma,30000,
+% TODO
+gmax_Na:RC_ext-@soma,5000,
 gmax_Kf:RC_ext-@soma,1000,
 gmax_Ks:RC_ext-@soma,4000,
 %States
@@ -321,9 +322,9 @@ axonDelayLeakTimeConstant:SOL-FF,10,10
 %% RC, threshold set to make Irh=0.5
 position:RC_ext-,0,18
 threshold:RC_ext-,0.15,0.5 
-d@soma:RC_ext-,44,25
-l@soma:RC_ext-,420,242
-res@soma:RC_ext-,200,200
+d@soma:RC_ext-,20,25
+l@soma:RC_ext-,242,242 % 12000
+res@soma:RC_ext-,200,200 % 300000
 % Afferents
 axonDelayCondVel:Ia-SOL-,55,66
 axonDelayThreshold:Ia-SOL-,18,8
