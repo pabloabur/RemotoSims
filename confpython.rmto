@@ -1,7 +1,7 @@
 MUnumber_SOL-S,160,
 MUnumber_SOL-FR,10,
 MUnumber_SOL-FF,10,
-Number_RC_ext,70,
+Number_RC_ext,7,
 Number_CMExt,30,
 Number_Ia-SOL,400,
 Number_Ia-LG,160,
@@ -85,12 +85,12 @@ dyn:CMExt->SOL-FF@dendrite|excitatory,None,
 dec:CMExt->SOL-S@dendrite|excitatory,inf,
 dec:CMExt->SOL-FR@dendrite|excitatory,inf,
 dec:CMExt->SOL-FF@dendrite|excitatory,inf,
-Con:RC_ext->SOL-S@soma|inhibitory,100,
-Con:RC_ext->SOL-FR@soma|inhibitory,100,
-Con:RC_ext->SOL-FF@soma|inhibitory,100,
+Con:RC_ext->SOL-S@soma|inhibitory,4,
+Con:RC_ext->SOL-FR@soma|inhibitory,4,
+Con:RC_ext->SOL-FF@soma|inhibitory,4,
 gmax:RC_ext->SOL-S@soma|inhibitory,0.44,
-gmax:RC_ext->SOL-FR@soma|inhibitory,0.3,
-gmax:RC_ext->SOL-FF@soma|inhibitory,0.24,
+gmax:RC_ext->SOL-FR@soma|inhibitory,0.44,
+gmax:RC_ext->SOL-FF@soma|inhibitory,0.44,
 delay:RC_ext->SOL-S@soma|inhibitory,0.3,
 delay:RC_ext->SOL-FR@soma|inhibitory,0.3,
 delay:RC_ext->SOL-FF@soma|inhibitory,0.3,
@@ -141,12 +141,12 @@ TmaxSyn:RC_ext-|excitatory,1.0,
 TmaxSyn:RC_ext-|inhibitory,1.0,
 tPeakSyn:RC_ext-|excitatory,3,
 tPeakSyn:RC_ext-|inhibitory,0.4,
-Con:SOL-S>RC_ext-@soma|excitatory,100,
-Con:SOL-FR>RC_ext-@soma|excitatory,100,
-Con:SOL-FF>RC_ext-@soma|excitatory,100,
+Con:SOL-S>RC_ext-@soma|excitatory,6,
+Con:SOL-FR>RC_ext-@soma|excitatory,6,
+Con:SOL-FF>RC_ext-@soma|excitatory,6,
 gmax:SOL-S>RC_ext-@soma|excitatory,0.15,
-gmax:SOL-FR>RC_ext-@soma|excitatory,0.17,
-gmax:SOL-FF>RC_ext-@soma|excitatory,0.3,
+gmax:SOL-FR>RC_ext-@soma|excitatory,0.15,
+gmax:SOL-FF>RC_ext-@soma|excitatory,0.15,
 delay:SOL-S>RC_ext-@soma|excitatory,0.3,
 delay:SOL-FR>RC_ext-@soma|excitatory,0.3,
 delay:SOL-FF>RC_ext-@soma|excitatory,0.3,
@@ -335,9 +335,9 @@ axonDelayLeakTimeConstant:SOL-FF,10,10
 %% RC
 position:RC_ext-,0,18
 threshold:RC_ext-,5,15
-d@soma:RC_ext-,65,65
-l@soma:RC_ext-,285,285
-res@soma:RC_ext-,200,200
+d@soma:RC_ext-,25,25
+l@soma:RC_ext-,242,242
+res@soma:RC_ext-,760,760
 % Afferents
 axonDelayCondVel:Ia-SOL-,55,66
 axonDelayThreshold:Ia-SOL-,18,8

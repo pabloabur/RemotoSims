@@ -48,8 +48,8 @@ def simulator():
 
     pools[0].listSpikes()
 
-    #plt.figure()
-    #plt.plot(t, pools[0].unit[0].nerveStimulus_mA)
+    plt.figure()
+    plt.plot(t, pools[0].unit[0].nerveStimulus_mA)
     
     plt.figure()
     plt.plot(t, MN_mV, '-')

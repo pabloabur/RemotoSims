@@ -13,7 +13,7 @@ def simulator():
 
     pools = dict()
     pools[0] = MotorUnitPool(conf, 'SOL')
-    pools[1] = InterneuronPool(conf, 'RC', 'ext')
+    #pools[1] = InterneuronPool(conf, 'RC', 'ext')
 
     Syn = SynapsesFactory(conf, pools)
 
@@ -21,12 +21,12 @@ def simulator():
 
     tic = time.clock()
     for i in xrange(0, len(t)):
-        # Corrent injected at the some of MNs
+        # Corrent injectada no soma dos MNs
         for j in xrange(1, len(pools[0].iInjected), 2):
             pools[0].iInjected[j] = 10
         pools[0].atualizeMotorUnitPool(t[i]) # MN pool
-        pools[2].atualizePool(t[i]) # RC synaptic Noise
-        pools[1].atualizeInterneuronPool(t[i]) # RC pool
+        #pools[2].atualizePool(t[i]) # RC synaptic Noise
+        #pools[1].atualizeInterneuronPool(t[i]) # RC pool
     toc = time.clock()
     print str(toc - tic) + ' seconds'
 
